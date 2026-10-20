@@ -1,0 +1,6 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+@Component({standalone:true,imports:[RouterLink],template:`
+<section><h2>About Library</h2><p>Our library contains thousands of books related to Computer Science, Engineering, Management and Competitive Exams. Students can issue books, read journals, and access digital learning resources.</p><div class="library-art" role="img" aria-label="Illustration of books in a library"><span>📚</span><strong>READ • LEARN • GROW</strong></div><p><a routerLink="/books">Explore available books →</a></p></section>
+<section><h2>Welcome to Smart Library</h2><p>This website helps students explore the book collection, learn about library facilities, and try a student registration form.</p><div class="cards"><article><h3>Explore Books</h3><p>Browse a sample list of computer science and programming books.</p><a routerLink="/books">View books</a></article><article><h3>Library Services</h3><p>Learn about our facilities and library rules.</p><a routerLink="/services">View services</a></article><article><h3>Student Help</h3><p>Open the contact page and try the registration form.</p><a routerLink="/contact">Contact us</a></article></div></section>`})
+export class HomeComponent {}
